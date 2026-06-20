@@ -47,7 +47,8 @@ export default function Hero() {
 
   return (
     <section id="hero" className="hero">
-      <div className="container hero__content">
+      <div className="container">
+      <div className="hero__content">
         <p className="hero__greeting fade-1">Hi there, I&apos;m</p>
 
         <h1 className="hero__name fade-2">Abhinav Vaidya</h1>
@@ -80,7 +81,7 @@ export default function Hero() {
         </div>
 
       </div>
-
+      </div>
     </section>
   )
 }

@@ -9,7 +9,7 @@
 }
 
 .exp__role {
-  font-size: 1.1rem;
+  font-size: clamp(0.95rem, 2.5vw, 1.1rem);
   font-weight: 600;
   color: var(--text);
   margin-bottom: 4px;
