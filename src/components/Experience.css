@@ -1,0 +1,64 @@
+.exp__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.exp__company-header {
+  margin-bottom: 20px;
+}
+
+.exp__role {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.exp__company-name {
+  font-family: var(--mono);
+  font-size: 0.82rem;
+  color: var(--accent);
+  margin-bottom: 4px;
+}
+
+.exp__period {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.exp__project-name {
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  color: var(--accent);
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.exp__bullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.exp__bullets li {
+  display: flex;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: var(--text-sub);
+  line-height: 1.7;
+}
+
+.exp__arrow {
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.exp__stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}

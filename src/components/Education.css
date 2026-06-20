@@ -1,0 +1,52 @@
+.edu__layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.edu__block-title {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 16px;
+}
+
+.edu__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.edu__card {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.edu__card-icon { font-size: 1.3rem; flex-shrink: 0; }
+
+.edu__degree {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.edu__institution {
+  font-size: 0.83rem;
+  color: var(--text-sub);
+  margin-bottom: 6px;
+}
+
+.edu__achievement-desc {
+  margin-top: 6px;
+  font-size: 0.83rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+@media (max-width: 640px) {
+  .edu__layout { grid-template-columns: 1fr; }
+}

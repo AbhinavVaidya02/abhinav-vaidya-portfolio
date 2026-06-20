@@ -1,0 +1,107 @@
+.navbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  background: rgba(10, 12, 16, 0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+}
+
+.navbar__inner {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 28px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.navbar__logo {
+  flex-shrink: 0;
+}
+
+.navbar__logo {
+  font-family: var(--mono);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.navbar__logo-bracket { color: var(--accent); }
+
+.navbar__links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+  margin-left: auto;
+}
+
+.navbar__links a {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  color: var(--text-sub);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.navbar__links a:hover { color: var(--accent); }
+
+.navbar__resume-btn {
+  padding: 5px 14px;
+  border: 1px solid var(--accent) !important;
+  border-radius: 4px;
+  color: var(--accent) !important;
+  transition: background 0.2s !important;
+}
+
+.navbar__resume-btn:hover { background: var(--accent-dim) !important; }
+
+/* ── Hamburger ── */
+.navbar__hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: none;
+  padding: 4px;
+}
+
+.navbar__hamburger span {
+  display: block;
+  width: 22px;
+  height: 1.5px;
+  background: var(--text-sub);
+  border-radius: 2px;
+  transition: all 0.25s;
+  transform-origin: center;
+}
+
+.navbar__hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); background: var(--accent); }
+.navbar__hamburger.open span:nth-child(2) { opacity: 0; }
+.navbar__hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); background: var(--accent); }
+
+@media (max-width: 640px) {
+  .navbar__hamburger { display: flex; }
+
+  .navbar__links {
+    position: fixed;
+    top: 56px; right: -100%;
+    height: calc(100vh - 56px);
+    width: 240px;
+    background: var(--bg-section);
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    border-left: 1px solid var(--border);
+    transition: right 0.3s ease;
+    padding: 32px;
+  }
+
+  .navbar__links--open { right: 0; }
+  .navbar__links a { font-size: 0.9rem; }
+}
