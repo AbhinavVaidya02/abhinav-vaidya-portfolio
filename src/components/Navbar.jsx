@@ -43,17 +43,16 @@ export default function Navbar() {
               </a>
             </li>
           ))}
-          <li>
-            <a
-              href="/Abhinav_Vaidya_Resume_1.pdf"
-              target="_blank"
-              rel="noreferrer"
-              className="navbar__resume-btn"
-            >
-              Resume
-            </a>
-          </li>
         </ul>
+
+        <a
+          href="/Abhinav_Vaidya_Resume_1.pdf"
+          target="_blank"
+          rel="noreferrer"
+          className="navbar__resume-btn"
+        >
+          Resume
+        </a>
 
         <button
           className={`navbar__hamburger ${menuOpen ? 'open' : ''}`}
